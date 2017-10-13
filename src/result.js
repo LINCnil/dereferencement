@@ -14,8 +14,7 @@ function setpopupback() {
 		active : true,
 		currentWindow : true
 	}, function(tabs) {
-		browser.browserAction.setPopup({popup: "/src/popup.html"}); // Temporary fix
-		//browser.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/popup.html"});
+		browser.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/popup.html"});
 		window.location.replace("/src/popup.html");
 	});
 }
