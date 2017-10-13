@@ -1,28 +1,52 @@
 {
-	"name": "Droit au déréférencement",
-	"version": "1.0",
-	"manifest_version": 2,
-	"description": "Vérifier l’effectivité de l’exercice de vos droits avec l’outil d’aide au déréférencement.",
-	"homepage_url": "https://www.cnil.fr/fr/le-droit-au-dereferencement",
-	"permissions": [
-		"activeTab",
-		"storage"
-	],
-	"applications": {
-		"gecko": {
-			"id": "jgn@cnil.fr"
-		}
-	},
-	"icons": {
-		"48": "icons/cnil_logo-48.png"
-	},
-	"browser_action": {
-		"default_title": "Aide au dereferencement",
-		"default_icon": "icons/cnil_logo-512.png",
-		"default_popup": "src/popup.html"
-	},
-	"web_accessible_resources": [
-		"icons/cnil_logo-large.png",
-		"icons/plus-31216_640.png"
-	]
+    "applications": {
+        "gecko": {
+            "id": "jgn@cnil.fr"
+        }
+    },
+    "author": "linc",
+    "icons": {
+        "16": "icons/cnil_logo-16.png",
+        "32": "icons/cnil_logo-32.png",
+        "48": "icons/cnil_logo-48.png",
+        "128": "icons/cnil_logo-128.png",
+        "512": "icons/cnil_logo-512.png"
+    },
+    "browser_action": {
+        "default_title": "Aide au dereferencement",
+        "default_icon": {
+            "16": "icons/cnil_logo-16.png",
+            "32": "icons/cnil_logo-32.png",
+            "48": "icons/cnil_logo-48.png",
+            "128": "icons/cnil_logo-128.png",
+            "512": "icons/cnil_logo-512.png"
+        },
+        "default_popup": "src/popup.html"
+    },
+    "description": "Vérifier l’effectivité de l’exercice de vos droits avec l’outil d’aide au déréférencement.",
+    "homepage_url": "https://www.cnil.fr/fr/le-droit-au-dereferencement",
+    "manifest_version": 2,
+    "name": "Droit au déréférencement",
+    "permissions": [
+        "*://*/*"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "src/supported.js",
+                "src/search.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "version": "1.0",
+    "web_accessible_resources": [
+        "icons/cnil_logo-large.png"
+    ],
+    "-ms-preload": {
+        "backgroundScript": "backgroundScriptsAPIBridge.js",
+        "contentScript": "contentScriptsAPIBridge.js"
+    }
 }

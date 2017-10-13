@@ -1,7 +1,4 @@
-var browser = chrome;
-
-
-
+	 
 function saveChanges() {
 	var name = document.getElementById("name").value;
 	var urls = [];

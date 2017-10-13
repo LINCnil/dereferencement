@@ -14,10 +14,9 @@ function setpopupback() {
 		active : true,
 		currentWindow : true
 	}, function(tabs) {
-		//browser.browserAction.setPopup({popup: "/src/popup.html"}); // Temporary fix
-		browser.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/popup.html"});
+		browser.browserAction.setPopup({popup: "/src/popup.html"}); // Temporary fix
+		//browser.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/popup.html"});
 		window.location.replace("/src/popup.html");
-		window.close();
 	});
 }
 
@@ -67,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				document.getElementById("deref").addEventListener("click", function(){
 					openLink(search[6]);
 				});
-				/*
+				
 				script = 'var browser = chrome; var links = document.querySelectorAll("'+search[5]+'"); browser.runtime.sendMessage({num_result: links.length});';
 				chrome.runtime.onMessage.addListener(
 				function(request, sender, sendResponse) {
@@ -76,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			
 				browser.tabs.executeScript(null, {
 					code : script
-				});*/
+				});
 			}
 		});
 	});
