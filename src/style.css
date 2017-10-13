@@ -138,7 +138,7 @@ body {
   position:relative;
 }
 .menu-dropdown-label:after {
-    content:'>';
+    //content:'>';
     color:#71716E;
     -webkit-transform:rotate(90deg);
     -moz-transform:rotate(90deg);

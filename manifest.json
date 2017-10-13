@@ -22,6 +22,7 @@
 		"default_popup": "src/popup.html"
 	},
 	"web_accessible_resources": [
-		"icons/cnil_logo-large.png"
+		"icons/cnil_logo-large.png",
+		"icons/plus-31216_640.png"
 	]
 }
