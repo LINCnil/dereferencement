@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Le droit au déréférencement</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<a href="javascript:void(0)"  id="cnil-deref"> <h1 class="title header-title">Aide au Déréférencement</h1> </a>
+		<a href="javascript:void(0)" id="cnil"><img src="../icons/cnil_logo_white.png" width="100" class="addon-header-logo"></a>
+	</header>
+
+	<div class="addon-container-content">
+		<h2 class="title content-title">Moteur de recherche</h2>
+		<span class="text-info">
+			Sélectionnez le moteur de recherche à analyser.
+		</span>
+		<label class="menu-dropdown-label">
+			<select id="searchSelector" class="menu-dropdown">
+				<option selected disabled>Liste des moteurs de recherche</option>
+			</select>
+		</label>
+	</div>
+
+	<div class="addon-container-content">
+		<h2 class="title content-title">Informations à rechercher</h2>
+		<input class="addon-content-input" type="text" id="name" placeholder="Indiquez votre nom et prénom"> <br>
+		<div id="urls">
+			<input type="text" class="url" placeholder="Indiquez le(s) nom(s) de domaine à analyser">
+			<a class="addon-content-input-add" id="plus" href="javascript:void(0)">+</a>
+			<div id="urls_extender">
+			</div>
+			<a href="" id="clean" class="link-action">Effacer les champs</a>
+		</div>
+	</div>
+
+	<div class="container-button">
+		<button id="go" type="button" class="addon-button">Rechercher</button>
+		<div class="clear"></div>
+	</div>
+	
+  
+	<script src="supported.js"></script>
+	<script src="search.js"></script>
+</body>
+</html>

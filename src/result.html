@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Le droit au déréférencement</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+		<h1 class="title header-title">Aide au Déréférencement</h1>
+		<a href="https://www.cnil.fr/" target="_blank"><img src="../icons/cnil_logo_white.png" width="100" class="addon-header-logo"></a>
+	</header>
+
+  <div class="addon-container-content">
+    <h2 class="title content-title">Recherche Effectuée</h2>
+    <div class="info-align-left">
+      <div class="info-container">
+        <span class="text-info ">Nom et prénom </span>
+        <span  id="name_id" class="text-info text-active"></span>
+      </div>
+      <div class="info-container">
+        <span class="text-info ">Domaine(s) analysé(s)</span>
+        <span  id="domain_id" class="text-info text-active"></span>
+      </div>
+    </div>
+    <div class="info-align-right info-container">
+      <span class="text-info">Moteur de recherche </span>
+      <span  id="search_id" class="text-info text-active"></span>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div class="addon-container-content">
+    <span class="title text-important"> Au moins <span  id="result_id"></span> résultats trouvés</span>
+  </div>
+
+  <div class="addon-container-content">
+    <button  id="return" type="button" class="addon-button">Nouvelle Recherche</button>
+    <a href="javascript:void(0)" id="deref" class="link-button addon-button"> demande de déréférencement </a> <br>
+    <a href="javascript:void(0)" id="cnil-deref" class="text-info link-external"> Que faire en cas de refus ? </a><br>
+    <div class="clear"></div>
+  </div>
+
+   <script src="supported.js"></script>
+   <script src="result.js"></script>
+</body>
+</html>
