@@ -71,7 +71,7 @@ function setSearch() {
 			url : searchurl,
 			index : tabs[0].index +1
 		}, function(tab){
-			//window.close();
+			window.close();
 		});
 	});
 }
@@ -124,16 +124,14 @@ function launchSearch(form, bracket, url_only) {
 		active : true,
 		currentWindow : true
 	}, function(tabs) {
-		//browser.browserAction.setPopup({popup: "/src/result.html"}); //Temporary fix for chrome
-		chrome.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/result.html"});
+		browser.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/result.html"});
 		browser.tabs.sendMessage(tabs[0].id, {
 			search_name : name,
 			search_urls : urls,
 			search_form : form,
 			has_bracket : bracket
 		},function(){
-			window.location.href="/src/result.html";
-			
+			window.close();
 		});
 	});
 }
