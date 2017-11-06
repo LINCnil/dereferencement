@@ -124,14 +124,16 @@ function launchSearch(form, bracket, url_only) {
 		active : true,
 		currentWindow : true
 	}, function(tabs) {
-		browser.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/result.html"});
+		//browser.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/result.html"});
+		chrome.browserAction.setPopup({tabId:tabs[0].id, popup: "/src/result.html"});
 		browser.tabs.sendMessage(tabs[0].id, {
 			search_name : name,
 			search_urls : urls,
 			search_form : form,
 			has_bracket : bracket
 		},function(){
-			window.close();
+			window.location.href="/src/result.html";
+			
 		});
 	});
 }
