@@ -6,7 +6,8 @@
 	"homepage_url": "https://www.cnil.fr/fr/le-droit-au-dereferencement",
 	"permissions": [
 		"activeTab",
-		"storage"
+		"storage",
+		"<all_urls>"
 	],
 	"applications": {
 		"gecko": {
@@ -20,8 +21,5 @@
 		"default_title": "Aide au dereferencement",
 		"default_icon": "icons/cnil_logo-512.png",
 		"default_popup": "src/popup.html"
-	},
-	"web_accessible_resources": [
-		"icons/cnil_logo-large.png"
-	]
+	}
 }
