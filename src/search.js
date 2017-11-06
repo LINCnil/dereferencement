@@ -205,8 +205,10 @@ document.addEventListener('DOMContentLoaded', function() {
 				
 				setOn();
 				
-				document.getElementById("plus").addEventListener('click',
-						addUrl, false);
+				if (search[7] == true){
+					document.getElementById("plus").addEventListener('click',
+						addUrl, false);		
+				}				
 
 				document.getElementById("go").addEventListener("click",
 						function() {
