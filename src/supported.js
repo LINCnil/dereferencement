@@ -1,7 +1,7 @@
 /* Search engine description : [Name, URL, search bar identifier, bracket use, url only, result form, deref urls, support for multiple requests */
 var search_engine = [["Ask", "https://fr.ask.com", 'form[action="/web"]', false, false, "div.PartialSearchResults-item a", "https://www.cnil.fr/fr/le-droit-au-dereferencement", true ],
 		 ["Bing", "https://www.bing.com", 'form[action="/search"]', true, true , "h2 a", "https://www.bing.com/webmaster/tools/eu-privacy-request", true ],
-		 ["DuckDuckGo", "https://duckduckgo.com", 'form[action="/"]', true, true , "h2.result__title a", "https://www.cnil.fr/fr/le-droit-au-dereferencement" ],
+		 ["DuckDuckGo", "https://duckduckgo.com", 'form[action="/"]', true, true , "h2.result__title a", "https://www.cnil.fr/fr/le-droit-au-dereferencement", true ],
 		 ["Google", "https://www.google.fr", 'form[action="/search"]', false, false , "h3.r a", "https://support.google.com/legal/contact/lr_eudpa?product=websearch&hl=fr", true  ],
 		 ["Qwant", "https://www.qwant.com", 'form[action="."]', true, true , "h3 span.result--web--title", "https://about.qwant.com/wp-content/uploads/dlm_uploads/2017/02/dereferencement.pdf", false ],
 		 ["IXQUICK", "https://www.ixquick.fr", 'form[id="search_form"]', false, false , "h3.clk a", "https://www.cnil.fr/fr/le-droit-au-dereferencement", true],
