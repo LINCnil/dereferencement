@@ -6,8 +6,7 @@
 	"homepage_url": "https://www.cnil.fr/fr/le-droit-au-dereferencement",
 	"permissions": [
 		"activeTab",
-		"storage",
-		"<all_urls>"
+		"storage"
 	],
 	"applications": {
 		"gecko": {
