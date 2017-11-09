@@ -5,14 +5,15 @@ function fill_url(request, sender, sendResponse) {
 	var urls  = request.search_urls.filter(Boolean);
 	var query = request.search_name +" ";
 	var has_bracket = request.has_bracket;
+	var pre_url = request.pre_url;
 	
 	if (urls.length >1 && has_bracket == true){
 		query += '(';
 	}
 	
 	
-	query += 'site:';
-	query += urls.join (" OR site:");
+	query += pre_url;
+	query += urls.join (" OR "+pre_url);
 	
 	if (urls.length >1 && has_bracket == true){
 		query += ')';
