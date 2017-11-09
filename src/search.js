@@ -87,7 +87,7 @@ function openCnil(url) {
 	});
 }
 
-function launchSearch(form, bracket, url_only) {
+function launchSearch(form, bracket, url_only, header) {
 	var name = document.getElementById("name").value;
 	var urls = [];
 
@@ -129,7 +129,8 @@ function launchSearch(form, bracket, url_only) {
 			search_name : name,
 			search_urls : urls,
 			search_form : form,
-			has_bracket : bracket
+			has_bracket : bracket,
+			pre_url : header
 		},function(){
 			window.close();
 		});
@@ -212,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 				document.getElementById("go").addEventListener("click",
 						function() {
-							launchSearch(search[2], search[3], search[4])
+							launchSearch(search[2], search[3], search[4], search[8]);
 						});
 			}
 
