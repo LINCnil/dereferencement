@@ -8,7 +8,7 @@ Par ailleurs, l’ordre des résultats peut varier suivant de nombreux critères
 
 Pour vous aider à vérifier l’effectivité de l’exercice de vos droits, l’équipe du laboratoire de la CNIL a développé une extension qui vous permet de déterminer si un lien apparaît ou non parmi l’ensemble des résultats d’un moteur de recherche, à la saisie de votre nom. Cette extension peut ainsi simplifier vos démarches en déterminant, parmi les moteurs de recherches proposés, si un résultat apparait et s’il a bien été déréférencé suite à votre demande. 
 
-Pour installer cette extension, vous pouvez rendre à l'adresse suivante depuis votre navigateur Firefox :
+Pour installer cette extension, vous pouvez vous rendre à l'adresse suivante depuis votre navigateur Firefox :
 https://addons.mozilla.org/fr/firefox/addon/droit-au-d%C3%A9r%C3%A9f%C3%A9rencement/
 
 Pour construire vous même cette extension, vous pouvez executer la commande make à la racine de votre répertoire.
