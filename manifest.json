@@ -5,14 +5,8 @@
 	"description": "Vérifier l’effectivité de l’exercice de vos droits avec l’outil d’aide au déréférencement.",
 	"homepage_url": "https://www.cnil.fr/fr/le-droit-au-dereferencement",
 	"permissions": [
-		"activeTab",
-		"storage"
+		"activeTab"
 	],
-	"applications": {
-		"gecko": {
-			"id": "jgn@cnil.fr"
-		}
-	},
 	"icons": {
 		"48": "icons/cnil_logo-48.png"
 	},
